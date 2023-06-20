@@ -1,0 +1,836 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, input, textarea, p, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    word-break: break-all;
+    font: 12px/1.5 "microsoft yahei",sans-serif,tahoma,arial,'Hiragino Sans GB','SimSun',sans-serif;
+}
+
+img {
+    vertical-align: center;
+}
+
+li, ul {
+    list-style: none;
+}
+
+i {
+    font-style: normal;
+}
+
+a, button, input, textarea {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input, textarea {
+    padding: 2px;
+}
+/*font*/
+em, strong, i {
+    font-style: normal;
+    font-weight: normal;
+}
+/* table */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+label {
+    display: block;
+}
+
+.allWidth {
+    width: 990px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.f14 {
+    font-size: 14px;
+}
+
+.c66 {
+    color: #666;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-table;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+.loginBox {
+    height: 475px;
+    min-width: 990px;
+}
+
+.loginTop {
+    padding: 13px 0;
+}
+
+    .loginTop .logo img {
+        max-width: 642px;
+        max-height: 55px;
+    }
+
+    .loginTop .problem {
+        width: 148px;
+        padding: 22px 0 0 0;
+    }
+
+        .loginTop .problem .pro_icon {
+            margin-top: 3px;
+            position: relative;
+            left: 8px;
+        }
+
+        .loginTop .problem img {
+            width: 20px;
+            height: 17px;
+        }
+
+.loginCon {
+    position: relative;
+    height: 475px;
+}
+
+.slideBox {
+    overflow: hidden;
+    height: 475px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+    .slideBox .bd {
+        position: relative;
+        height: 100%;
+        z-index: 0;
+    }
+
+        .slideBox .bd li {
+            zoom: 1;
+            vertical-align: middle;
+            width: 100%;
+            height: 100%;
+        }
+
+            .slideBox .bd li a {
+                display: block;
+                width: 990px;
+                height: 475px;
+                margin: 0 auto;
+                cursor: default;
+            }
+
+    .slideBox .prev,
+    .slideBox .next {
+        position: absolute;
+        left: 3%;
+        top: 50%;
+        margin-top: -65px;
+        display: block;
+        width: 65px;
+        height: 65px;
+    
+        filter: alpha(opacity=100);
+        opacity: 1;
+    }
+
+    .slideBox .next {
+        left: auto;
+        right: 3%;
+        background-position: -65px 0;
+    }
+
+        .slideBox .prev:hover,
+        .slideBox .next:hover {
+            filter: alpha(opacity=50);
+            opacity: 0.5;
+        }
+
+    .slideBox .prevStop {
+        display: none;
+    }
+
+    .slideBox .nextStop {
+        display: none;
+    }
+
+#loginConBox {
+    z-index: 99;
+    position: relative;
+}
+
+.mod_login {
+    width: 290px;
+    background: #fff;
+    overflow: hidden;
+    padding: 0 30px 0 30px;
+    position: relative;
+    margin-top: 45px; /*margin-right:70px;*/
+}
+
+    .mod_login .yzt_qrcode {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        width: 49px;
+        height: 49px;
+    }
+
+        .mod_login .yzt_qrcode .pc, .mod_login .yzt_qrcode .wx {
+            display: block;
+            width: 49px;
+            height: 49px;
+        }
+
+        .mod_login .yzt_qrcode .pc {
+      
+        }
+
+        .mod_login .yzt_qrcode .wx {
+         
+        }
+
+.loginboxcon {
+    overflow: hidden;
+}
+
+.l_form {
+    width: 100%;
+    margin-top: 30px;
+    *padding-top: 30px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+    .l_form .title {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .l_form .forget {
+        margin-bottom: 18px;
+    }
+
+        .l_form .forget input {
+            border: 1px solid #d2d2d2;
+            margin-top: 3px;
+            margin-right: 8px;
+        }
+
+        .l_form .forget span {
+            margin-right: 24px;
+        }
+
+        .l_form .forget span, .l_form .forget a {
+            color: #999;
+        }
+
+.login_input {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+    .login_input.active .l_input,
+    .login_input.active .input-p {
+        border-color: #00a0e9;
+    }
+
+    .login_input.active .iconLogin {
+        background: #00a0e9;
+    }
+
+.error-content {
+    position: relative;
+    background: #ffebeb;
+    color: #e4393c;
+    border: 1px solid #faccc6;
+    padding: 3px 10px 3px 10px;
+    line-height: 15px;
+    height: auto;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    display: none;
+}
+
+    .error-content.success {
+        background: #dff0d8;
+        color: #3c763d;
+        border: 1px solid #d6e9c6;
+    }
+
+.btn-login:hover {
+    opacity: 0.8;
+}
+
+
+
+/*��¼icon*/
+.iconLogin {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #dcdcdc;
+    top: 0;
+    left: 0;
+}
+
+    .iconLogin img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 13px;
+    }
+
+.l_input {
+    width: 228px;
+    height: 30px;
+    /*box-shadow: inset 0 1px 1px rgba(0,0,0,.1);*/
+    border: 1px #E3E3E3 solid;
+    padding: 4px 0 4px 50px;
+    overflow: hidden;
+}
+
+.input-p {
+    height: 30px;
+    border: 1px #E3E3E3 solid;
+    padding: 4px 5px 4px 10px;
+    overflow: hidden;
+}
+
+.input-phone {
+    width: 263px;
+}
+
+.input-yz {
+    width: 165px;
+}
+
+.yzm {
+    height: 40px;
+    width: 90px;
+    float: right;
+    cursor: pointer;
+}
+
+.yzm-but {
+    border: 0;
+    font-size: 12px;
+    color: #fff;
+    background: #00a0e9;
+}
+
+    .yzm-but.loading {
+        background: #c9c9c9;
+    }
+
+.l_btn {
+    width: 230px;
+    height: 40px;
+    border: 0;
+    background-color: #00a0e9;
+    box-sizing: content-box;
+    overflow: hidden;
+    color: #FFF;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-tip {
+    position: absolute;
+    top: 13px;
+    right: 70px;
+    color: #ec6941;
+ 
+    padding-left: 20px;
+}
+
+.login-tip-pass {
+   
+}
+
+.wxlogo {
+    width: 140px;
+    height: 140px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+}
+
+.wxlogobox {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+   
+    display: none;
+}
+/*Refresh*/
+.wxlogo img {
+    width: 140px;
+    height: 140px;
+}
+
+.apptxt {
+    text-align: center;
+    color: #666666;
+}
+
+    .apptxt span {
+        color: #e60012;
+    }
+
+/*���ˢ��*/
+.wxlogobox p {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 34px;
+}
+
+.wxlogobox input {
+    margin: 0 auto;
+    margin-top: 16px;
+    display: block;
+    background: #00a0e9;
+    font-size: 14px;
+    padding: 8px 14px;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*��������¼*/
+.Thirdparty {
+    margin-bottom: 22px;
+    overflow: hidden;
+}
+
+    .Thirdparty dl dd {
+        float: left;
+        width: 25%;
+        text-align: center;
+    }
+
+        .Thirdparty dl dd a {
+            color: #666666;
+        }
+
+            .Thirdparty dl dd a em {
+                width: 18px;
+                height: 18px;
+                display: block;
+               
+                margin: 0 auto;
+                margin-bottom: 10px;
+            }
+
+                .Thirdparty dl dd a em:hover {
+                    opacity: 0.8;
+                }
+
+                .Thirdparty dl dd a em.icon_wei {
+                }
+
+                .Thirdparty dl dd a em.icon_qq {
+                    background-position: -77px 0;
+                }
+
+                .Thirdparty dl dd a em.icon_zhi {
+                    background-position: -153px 0;
+                }
+
+                .Thirdparty dl dd a em.icon_phone {
+                    background-position: -222px 0;
+                }
+
+.bottonLocal {
+    background: #e5e5e5;
+}
+
+    .bottonLocal dl dd {
+        float: left;
+    }
+
+.copyTxt {
+    text-align: center;
+    font-size: 12px;
+    padding: 20px 0;
+    color: #666;
+}
+
+.bottonLocal {
+    height: 40px;
+    line-height: 40px;
+}
+
+.bottonLocalBox {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+    .bottonLocalBox dl dd {
+        width: 100px;
+        font-size: 14px;
+    }
+
+        .bottonLocalBox dl dd a {
+            color: #666;
+        }
+
+.bottonImage {
+    margin: 0 auto;
+    width: 270px;
+}
+
+    .bottonImage dl dd {
+        float: left;
+        text-align: center;
+        color: #666;
+        margin: 0 10px;
+    }
+
+#imgVerifyCode, #imgVerifyCode2 {
+    float: right;
+    cursor: pointer;
+}
+
+.rqcode-content {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.wxlogo img.rqcode-loading {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 62px;
+    left: 63px;
+}
+
+.rqcode-error {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 62px;
+    left: 33px;
+    color: #666666;
+    /*color: red;*/
+}
+
+.rqcode-success-sm {
+    text-align: center;
+}
+
+    .rqcode-success-sm .user-img {
+        width: 71px;
+        height: 71px;
+        margin: 30px 0 10px 0;
+    }
+
+    .rqcode-success-sm .user-name {
+        overflow: hidden;
+        color: #666666;
+    }
+
+.sm-success-txt {
+    text-align: center;
+    color: #666666;
+    display: none;
+}
+
+.s-error {
+    text-align: center;
+    color: #e4393c;
+}
+
+.brn-dx-code.disabled {
+    background: #c9c9c9;
+    cursor: default;
+}
+/*���ڻ�ȡ*/
+.wxlogo.s1 .wxlogobox {
+    display: none;
+}
+
+.wxlogo.s1 .rqcode-content {
+    display: none;
+}
+
+.wxlogo.s1 .rqcode-loading {
+    display: block;
+}
+
+.wxlogo.s1 .rqcode-error {
+    display: none;
+}
+
+.wxlogo.s1 .rqcode-success-sm {
+    display: none;
+}
+
+/*������ʾ*/
+.wxlogo.s2 .wxlogobox {
+    display: none;
+}
+
+.wxlogo.s2 .rqcode-content {
+    display: block;
+}
+
+.wxlogo.s2 .rqcode-loading {
+    display: none;
+}
+
+.wxlogo.s2 .rqcode-error {
+    display: none;
+}
+
+.wxlogo.s2 .rqcode-success-sm {
+    display: none;
+}
+
+/*ʧЧ*/
+.wxlogo.s3 .wxlogobox {
+    display: block;
+}
+
+.wxlogo.s3 .rqcode-content {
+    display: block;
+}
+
+.wxlogo.s3 .rqcode-loading {
+    display: none;
+}
+
+.wxlogo.s3 .rqcode-error {
+    display: none;
+}
+
+.wxlogo.s3 .rqcode-success-sm {
+    display: none;
+}
+
+/*����*/
+.wxlogo.s4 .wxlogobox {
+    display: none;
+}
+
+.wxlogo.s4 .rqcode-content {
+    display: none;
+}
+
+.wxlogo.s4 .rqcode-loading {
+    display: none;
+}
+
+.wxlogo.s4 .rqcode-error {
+    display: block;
+}
+
+.wxlogo.s4 .rqcode-success-sm {
+    display: none;
+}
+
+/*ɨ��ɹ�*/
+.wxlogo.s5 {
+    border: 1px solid #fff;
+}
+
+    .wxlogo.s5 .wxlogobox {
+        display: none;
+    }
+
+    .wxlogo.s5 .rqcode-content {
+        display: none;
+    }
+
+    .wxlogo.s5 .rqcode-loading {
+        display: none;
+    }
+
+    .wxlogo.s5 .rqcode-error {
+        display: none;
+    }
+
+    .wxlogo.s5 .rqcode-success-sm {
+        display: block;
+    }
+
+    .wxlogo.s5 + .apptxt {
+        display: none;
+    }
+
+        .wxlogo.s5 + .apptxt + .sm-success-txt {
+            display: block;
+        }
+
+.bottonImage .qrcode-img {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+#footer-2013 {
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+    #footer-2013 .links {
+        margin-top: 30px;
+        color: #666;
+    }
+
+        #footer-2013 .links a,
+        #footer-2013 .links span {
+            margin: 0 10px;
+            color: #666;
+        }
+
+    #footer-2013 .copyright {
+        font-size: 12px;
+        color: #666;
+        margin: 10px 0;
+    }
+
+        #footer-2013 .copyright a {
+            color: #666;
+        }
+
+.coagent {
+    line-height: 50px;
+    border-top: 1px solid #f4f4f4;
+    height: auto;
+    background-color: #fcfcfc;
+}
+
+    .coagent ul {
+        display: block;
+    }
+
+    .coagent li {
+        float: left;
+    }
+
+        .coagent li a.pdl {
+            display: inline-block;
+            position: relative;
+            padding-left: 24px;
+        }
+
+        .coagent li .line {
+            color: #ccc;
+            padding: 0 10px;
+        }
+
+        .coagent li a > span {
+            font-size: 12px;
+            color: #666;
+        }
+
+    .coagent em.icon {
+        width: 18px;
+        height: 18px;
+        display: block;
+ 
+        margin: 0 auto;
+        position: absolute;
+        float: left;
+        left: 0;
+        top: 16px;
+    }
+
+        .coagent em.icon.icon_qq {
+            background-position: -77px 0;
+        }
+
+        .coagent em.icon.icon_phone {
+            background-position: -222px 0;
+        }
+
+    .coagent .pdl.pwd em.icon.icon_phone {
+        background-position: -282px 0;
+    }
+
+.reset-pwd, #btnResetLogin {
+    display: none;
+}
+
+.reset-box .phone-num {
+    display: none;
+}
+
+.reset-box .reset-pwd {
+    display: inline-block;
+}
+
+.reset-box #btnPhoneLogin {
+    display: none;
+}
+
+.reset-box #btnResetLogin {
+    display: inline-block;
+}
+
+.min .loginTop,
+.min .footer-2013,
+.min .bottonImage {
+    display: none;
+}
+
+.min .loginTop,
+.min .footer-info,
+.min .bottonImage,
+.min .bd {
+    display: none;
+}
+
+.min .mod_login {
+    margin-top: 0;
+    position: fixed;
+    left: 57.5px;
+    top: 0px;
+}
+
+.min .loginBox {
+    min-width: 450px;
+}
+
+.min .slideBox,
+.min .loginBox,
+.min .loginCon {
+    height: 367px;
+}

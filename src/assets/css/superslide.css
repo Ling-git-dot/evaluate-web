@@ -1,0 +1,29 @@
+
+
+/* 本例子css */
+.slideGroup{ text-align:left;  }
+.slideGroup .parHd{ height:38px; line-height:38px; background:#e5e5e5;  position:relative;  }
+.slideGroup .parHd .more a{ font-size: 12px;
+  float: right;
+  color: #9224ca;
+  margin-right: 10px;
+  font-weight: 700;}
+
+.slideGroup .parHd ul{ float:left; position:absolute; font-size:16px;font-weight:normal;   }
+.slideGroup .parHd ul li{ float:left; cursor:pointer;width:100px;text-align:center;color:#808080;border-right:1px solid #d6d6d6;}
+.slideGroup .parHd ul li a {display:none;}
+.slideGroup .parHd ul li.on{ background:#9224ca;color:#fff; }
+.slideGroup .parHd ul li.on:first-child {border-left:none;}
+.slideGroup .slideBox{ overflow:hidden; zoom:1; position:relative;border:none;width:auto;height:auto; padding:20px; padding-left:0;padding-right:0; margin-bottom:10px;min-height:142px; }
+
+ 
+.slideGroup .sPrev:hover,.slideGroup .sNext:hover{ border-color:#f60;  }
+
+.slideGroup .parBd ul{ overflow:hidden; zoom:1;   }
+.slideGroup .parBd ul li{ margin-right:8px; float:left; _display:inline; overflow:hidden; text-align:center;position:relative;    }
+.slideGroup .parBd ul li .title {position:absolute;bottom:0;left:0;width:100%;text-align:center;background:rgba(0,0,0,.5);color:#fff;}
+
+.slideGroup .parBd ul li .pic{ text-align:center;width:185px;height:142px;overflow:hidden; }
+.slideGroup .parBd ul li .pic img{ height:100%;}
+.slideGroup .parBd ul li .pic a:hover img{ border-color:#999;  }
+.slideGroup .parBd ul li .title{ line-height:24px;   }

@@ -1,0 +1,25 @@
+/*ע��ҳ��*/
+.header .header-in .register_link{float:right;margin-top:18px;text-align:right;line-height:28px;font-size:14px;color:#666666;}
+.header .header-in .register_link a{display:inline-block;height:26px;border:1px solid #ddd;width:58px;text-align:center;line-height:26px;border-radius:3px;color:#666;margin-left:10px;}
+.register_bg{background:#fafafa;border-top:2px solid #eee;height:696px;}
+.register_bg .register_bg_main{background:#fff;border:1px solid #eee;margin:0 auto;width:1200px;height:696px;border-top:0;}
+.register_bg .register_bg_main .register_form{width:380px;height:696px;margin:0 auto;padding-top:55px;}
+.register_form li{margin-top:20px;display:block;}
+.register_form li:first-child{margin-top:0;}
+.register_form .headtxt{border-left:2px solid #0b70da;height:20px;color:#282c31;font-size:18px;text-indent:8px;margin-bottom:25px;}
+.register_form .txtinput{line-height:41px;height:41px;border:1px solid #eee;background:#f9f9f9;font-size:14px;color:#2a2a2a;width:375px;border-radius:3px;text-indent:12px;}
+.register_form .txtinput:focus{background:#fff;border-color:#1170d5;}
+.register_form .proving .txtinput{width:250px;}
+.register_form .proving .img{width:80px;height:38px;margin:0 5px;display:inline-block;vertical-align:middle;}
+.register_form .proving a{font-size:12px;font-family:"����";color:#3366cc;}
+.register_form .provimg_msg{position:relative;}
+.register_form .provimg_msg .txtinput{width:260px;padding-right:5px;}
+.register_form .provimg_msg .provimg_msg_btn{width:119px;height:45px;line-height:45px;text-align:center;color:#fff;font-size:14px;border-top-right-radius:3px;border-bottom-right-radius:3px;position:absolute;right:0px;top:0;background:#0d67d6;cursor:pointer;}
+.register_form .provimg_msg .provimg_msg_not{background:#ccc;cursor:not-allowed;}
+.register_form .agreement{color:#a1a1a1;font-size:12px;}
+.register_form .agreement .check{border:1px solid #cccccc;width:15px;height:15px;display:inline-block;margin-right:8px;vertical-align:text-top;cursor:pointer;}
+ 
+.register_form .agreement a{color:#3366cc;}
+.register_form .last{margin-top:28px;}
+.register_form .last input{cursor:pointer;display:block;width:377px;height:45px;text-align:center;line-height:45px;color:#fff;font-size:18px;border:0;background:#ff7800;border-radius:3px;}
+ 
